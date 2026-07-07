@@ -1,0 +1,152 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+}
+
+/* Header Layout */
+.header {
+    display: flex;
+    justify-content: space-between; /* Align items space between */
+    align-items: center; /* Center items vertically */
+    padding: 1rem;
+    background-color: #007bff;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Welcome Text */
+.welcome-text {
+    font-size: 1.8rem;
+}
+
+/* Navigation Menu */
+.navbar {
+    display: flex; /* Use flex to align items horizontally */
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex; /* Keep the items in a row */
+    align-items: center; /* Center items vertically */
+    gap: 1rem; /* Space between buttons */
+}
+
+.navbar ul li {
+    position: relative; /* For dropdowns */
+}
+
+.navbar ul li button {
+    color: white;
+    background-color: #007bff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+.navbar ul li button:hover {
+    background-color: #0056b3;
+}
+
+/* Account Services Dropdown Menu */
+.account-menu {
+    position: relative;
+}
+
+.account-content {
+    display: none;
+    position: absolute;
+    background-color: #007bff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.account-content a {
+    text-decoration: none; /* Remove underline from links */
+}
+
+.account-content button {
+    color: white;
+    background-color: #007bff;
+    border: none;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.account-content button:hover {
+    background-color: #0056b3;
+}
+
+.account-menu:hover .account-content {
+    display: block; /* Show dropdown on hover */
+}
+
+/* Hamburger Menu */
+.hamburger-menu {
+    position: relative;
+}
+
+.menu-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: white;
+    background: none;
+    border: none;
+}
+
+.hamburger-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #007bff;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.hamburger-content button {
+    color: white;
+    background-color: #007bff;
+    border: none;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.hamburger-content button:hover {
+    background-color: #0056b3;
+}
+
+/* Show hamburger menu on hover */
+.hamburger-menu:hover .hamburger-content {
+    display: block;
+}
+
+/* Main Content Area */
+.main-container {
+    margin-top: 80px; /* Offset for fixed header */
+}
+
+.content {
+    padding: 2rem;
+}
