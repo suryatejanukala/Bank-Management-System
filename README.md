@@ -141,7 +141,7 @@ Servlet_Bank_Project/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/Servlet_Bank_Project.git
+   git clone https://github.com/suryatejanukala/Servlet_Bank_Project.git
    ```
 
 2. **Set up MySQL**
